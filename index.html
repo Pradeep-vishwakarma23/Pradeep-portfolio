@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pradeep — Portfolio</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="nav container">
+    <div class="brand"><h2>Pradeep Vishwakarma </h2></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" target="_blank">Resume</a>
+      <button data-toggle-theme class="btn small">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>I turn rough ideas into clear, working results by building quickly and learning fast.</h1>
+        <p class="lead muted">As a CSE student and growing full-stack developer, I enjoy experimenting with new technologies, creating rapid prototypes, using AI in practical ways, 
+          and developing projects grounded in real research and hands-on understanding. My focus is on transforming uncertain concepts into useful, reliable solutions.</p>
+      </div>
+      <aside class="card">
+        <div style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef2ff,#fff);border-radius:8px"><img src="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764414155/Gemini_Generated_Image_nsh3zlnsh3zlnsh3_n6fmt9.png" 
+         alt="Project Preview" 
+         style="height:100%; object-fit:cover;"></div>
+        <h4 style="margin-top:12px">Learning Path Generator</h4>
+        <ul class="small-list muted">
+          <li>Creates personalised study roadmaps using AI and modular workflows.</li>
+          <li>Tech: Streamlit,Python,Gemini API</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section style="margin-top:20px">
+      <h2>Projects & Gallery</h2>
+      <p class="muted">Click any thumbnail to view a larger preview. & Access the project output link </p>
+
+      <div class="gallery" style="margin-top:12px">
+        <div class="thumb"
+          data-full="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764496303/Diagnosis.AI_1_sxtoo8.jpg"
+          onclick="window.open('https://diagnosis-ai.wegic.app/landing-page', '_blank')">
+          <img alt="Diagnosis AI" src="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764496303/Diagnosis.AI_1_sxtoo8.jpg">
+      </div>
+      <div class="thumb"
+          data-full="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764496303/Diagnosis.AI_1_sxtoo8.jpg"
+          onclick="window.open('https://www.figma.com/design/4BwScAeZ8b6jNlPram8TBj/Pradeep_OLA?node-id=4-2860&t=TtPRqAJsUQvJJQIU-1', '_blank')">
+          <img alt="UI/UX" src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?semt=ais_hybrid&w=740&q=80">
+      </div>
+        <div class="thumb" data-full="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764414155/Gemini_Generated_Image_nsh3zlnsh3zlnsh3_n6fmt9.png"
+        onclick="window.open('https://pradeep-learning-path-generator.streamlit.app/', '_blank')">
+          <img alt="MCP" src="https://res.cloudinary.com/dotw7j1gt/image/upload/v1764414155/Gemini_Generated_Image_nsh3zlnsh3zlnsh3_n6fmt9.png"></div>
+      </div>
+
+      <div id="lightbox"><img id="lightbox-img" src="" alt="preview"></div>
+    </section>
+    <section style="margin-top:40px">
+  <h2>Workshops</h2>
+  <p class="muted">Hands-on sessions where I teach, build, and explore ideas.</p>
+
+  <div class="gallery" style="margin-top:12px">
+    <div class="thumb" data-full="https://media.licdn.com/dms/image/v2/D4E22AQErwdfLAciDxQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727107804800?e=1766016000&v=beta&t=VSwnYD3gsDLJMTT0HQjny0mAEr7rhq0srGVAFdTa3Ow">
+      <img alt="AI Bootcamp" src="https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https%3A%2F%2Fnw-live-interaction-media-static.s3.ap-south-1.amazonaws.com%2Fwebsite-static-images%2Fwebinars_thumbnails%2Fccbp-webinars-thumbnails%2FCCBP-Academy%2Fgenai2.0_workshop%2FGenAI_Desk.jpg">
+    </div>
+
+    <div class="thumb" data-full="https://cdn1.ccbp.in/misc/uiux_completion_cert_academy/7JGE3GEIIP.png?">
+      <img alt="Web Dev Workshop" src="https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https%3A%2F%2Fnw-live-interaction-media-static.s3.ap-south-1.amazonaws.com%2Fwebsite-static-images%2Fwebinars_thumbnails%2Fccbp-webinars-thumbnails%2FCCBP-Academy%2FUI-UX%2BWorkshop%2B15Dec2024%2FUIUX_1.jpg">
+    </div>
+
+    <div class="thumb" data-full="https://cdn1.ccbp.in/misc/workshop-acad-mcp-mega-workshop-completion/F7VHTGRSGS.png">
+      <img alt="Innovation Workshop" src="https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https%3A%2F%2Fnw-live-interaction-media-static.s3.ap-south-1.amazonaws.com%2Fwebsite-static-images%2Fwebinars_thumbnails%2Fccbp-webinars-thumbnails%2FCCBP-Academy%2Fmcp_mega_workshop_2025%2Fmcp_tab_date.jpg">
+    </div>
+  </div>
+
+  <!-- <div class="workshop-list" style="margin-top:14px; line-height:1.6">
+    <ul>
+      <li><strong>AI Mini Bootcamp:</strong> Intro to LLM apps, prompt engineering, fast prototyping.</li>
+      <li><strong>Full-Stack Starter Workshop:</strong> HTML/CSS/JS essentials + a deployable micro-project.</li>
+      <li><strong>Innovation Sprint:</strong> Lightning-speed idea → prototype using design thinking.</li>
+    </ul>
+  </div> -->
+  <div class="workshop-highlights" style="margin-top:20px;">
+  <h3 style="margin-bottom:8px;">Workshop Highlights</h3>
+  
+  <div class="tool-highlights" style="margin-top:28px;">
+  <h2 style="margin-bottom:8px;"> Generative AI 2.0 Mega Workshop</h2>
+  <ul style="line-height:1.6; margin-left:18px;">
+
+    <li>Used ChatGPT for idea generation, content creation, and real-time responses 🤖</li>
+<li>Boosted productivity with Microsoft Copilot’s AI-powered automation ⚡</li>
+<li>Created accurate customer personas using UserPersona.dev 🎯</li>
+<li>Generated catchy brand names instantly with Namelix 🔤</li>
+<li>Designed clean, professional logos via Sologo.AI 🎨</li>
+<li>Built quick MVPs using Smasher Odds MVP Machine 🚀</li>
+<li>Turned data into actionable insights through Wegic AI 📊</li>
+<li>Created and shared smart forms easily with FormShare 📝</li>
+<li>Designed visuals and social posts using Microsoft Designer ✨</li>
+<li>Analyzed data more deeply using Gamma AI 📈</li>
+<li>Edited high-quality videos with Clipchamp 🎬</li>
+<li>Showcased the logo for my AI fitness mentor app <strong>Gofitty</strong> 💪🤖</li>
+
+  </ul>
+</div>
+<h2 style="margin-bottom:8px;">UI/UX Workshop</h2>
+  <ul style="line-height:1.6; margin-left:18px;">
+    <li>Transformed an idea into a functional app prototype using Figma 📊</li>
+    <li>Enhanced UI/UX design skills with latest industry trends and best practices 💡</li>
+    <li>Successfully prototyped innovative ideas through user-centered design 📈</li>
+    <li>Redesigned a mobile app/webpage, elevating the user experience and interface 📱</li>
+  </ul>
+
+</div>
+
+</section>
+
+
+    <section style="margin-top:18px" class="card">
+      <h3>Learning Path Generator — MCP</h3>
+      <p class="muted">Mini-project that converts learner goals into personalised, modular learning paths using MCP-based LLM automation.</p>
+      <div class="tags" style="margin-top:8px"><span>MCP</span><span>LLM</span><span>Mini Project</span></div>
+    </section>
+
+    <section style="margin-top:18px" class="card">
+      <h3>Contact</h3>
+      <p class="muted">Email: pradeepbadiger19@gmail.com · Phone: +91 8217313201 · <a href="https://www.linkedin.com/in/pradeep-badiger23" target="_blank">LinkedIn</a> <a href="https://github.com/Pradeep-vishwakarma23" target="_blank">GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer class="foot">Built with ❤️ • © <span data-year></span> Pradeep</footer>
+<script src="script.js"></script>
+</body></html>

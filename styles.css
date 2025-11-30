@@ -1,0 +1,35 @@
+
+:root{ --bg:#f7fbff; --card:#fff; --text:#071122; --muted:#556; --accent:#4b7bec; --glass: rgba(11,20,36,0.04); --radius:12px; --maxw:1100px;}
+:root.dark{ --bg:#071124; --card:#071124; --text:#e6eef8; --muted:#9fb0c6; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;}
+.container{max-width:var(--maxw);margin:28px auto;padding:20px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.brand{font-weight:800}
+.nav-links{display:flex;gap:10px;align-items:center}
+.nav-links a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--text);opacity:0.95}
+.nav-links a.active{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#fff}
+.btn{background:linear-gradient(90deg,var(--accent),#7c3aed);color:white;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+.hero-left h1{font-size:clamp(20px,4vw,36px);margin:6px 0}
+.lead{color:var(--muted);max-width:60ch}
+.card{padding:16px;border-radius:12px;background:var(--card);border:1px solid var(--glass);box-shadow:0 8px 20px rgba(2,6,23,0.04)}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:22px}
+.muted{color:var(--muted)}
+.tags span{display:inline-block;background:transparent;border:1px solid var(--glass);padding:6px 8px;border-radius:8px;margin-right:6px}
+
+/* Lightbox styles */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.thumb{cursor:pointer;border-radius:8px;overflow:hidden;border:1px solid var(--glass);background:#fff}
+.thumb img{display:block;width:100%;height:170px;object-fit:cover;transition:transform .28s ease}
+.thumb:hover img{transform:scale(1.03)}
+
+/* Lightbox overlay */
+#lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);z-index:9999;padding:20px}
+#lightbox.open{display:flex}
+#lightbox img{max-width:95%;max-height:85%;border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,0.6)}
+
+/* footer */
+.foot{text-align:center;padding:20px 0;color:var(--muted);margin-top:28px}
+
+/* responsive */
+@media(max-width:900px){ .hero{grid-template-columns:1fr} #lightbox img{max-height:80%} }
